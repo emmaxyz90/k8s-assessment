@@ -150,7 +150,7 @@ Below is a **ready-to-use `README.md`** that clearly documents your GitHub Actio
 
 ##  Continuous Integration (CI) Pipeline — *FastAPI Microservice*
 
-This repository is a GitHub Actions–based CI/CD pipeline** that automates the testing, building, and security scanning of a FastAPI microservice before deployment to container registries or Kubernetes environments.
+This repository is a GitHub Actions–based CI/CD pipeline that automates the testing, building, and security scanning of a FastAPI microservice before deployment to container registries or Kubernetes environments.
 
 The pipeline enforces **code quality**, ensures **test coverage**, and integrates **vulnerability scanning** to maintain security and compliance standards.
 
@@ -166,14 +166,14 @@ The workflow file is defined in:
 
 It consists of **two main jobs** that run sequentially:
 
-1. 🧪 **Test and Linting**
-2. 🐳 **Build and Push Docker Image**
+1.  **Test and Linting**
+2.  **Build and Push Docker Image**
 
 Below is a breakdown of each stage:
 
 ---
 
-### 🧩 **Job 1 — Test and Linting**
+### **Job 1 — Test and Linting**
 
 | Step                     | Purpose                                                                                                                                                |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -189,7 +189,7 @@ Only when this job passes does the next stage execute.
 
 ---
 
-### 🐋 **Job 2 — Build and Push Docker Image**
+### **Job 2 — Build and Push Docker Image**
 
 | Step                             | Purpose                                                                                                                                                                                                              |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -204,7 +204,7 @@ This stage automates container image creation and security verification, ensurin
 
 ---
 
-## 🔒 Secrets and Environment Variables
+## Secrets and Environment Variables
 
 To make the pipeline work, configure the following secrets in your GitHub repository:
 
@@ -218,7 +218,7 @@ Go to:
 
 ---
 
-## 🧠 Workflow Triggers
+## Workflow Triggers
 
 The pipeline can be triggered in two ways:
 
@@ -265,7 +265,7 @@ on:
 
 ## 📊 Pipeline Summary
 
-```mermaid
+```
 flowchart TD
     A[Checkout Code] --> B[Set Up Python 3.11]
     B --> C[Install Dependencies]
